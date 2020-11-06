@@ -8,7 +8,7 @@ import {Observable} from 'rxjs';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements  OnInit, OnDestroy{
-  public title = 'hawkins-architecture';
+  public title = 'architecture-hawkins-llc';
   public themeClass$: Observable<string>;
 
   constructor( private colorPicker: ColorPickerService) {

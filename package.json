@@ -1,5 +1,5 @@
 {
-  "name": "hawkins-architecture",
+  "name": "architecture-hawkins-llc",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lint-fix": "./node_modules/.bin/tslint 'src/**/*.ts?(x)' --fix",
-    "git-dply": "ng build --prod --base-href \"https://architecthawkins.github.io/hawkins-architecture/\" && ngh --dir dist/hawkins-architecture"
+    "git-dply": "ng build --prod --base-href \"https://architecthawkins.github.io/architecture-hawkins-llc/\" && ngh --dir dist/architecture-hawkins-llc"
   },
   "private": true,
   "dependencies": {
