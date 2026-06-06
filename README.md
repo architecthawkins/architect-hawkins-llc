@@ -2,6 +2,13 @@
 
 Portfolio and marketing website for [Architect Hawkins LLC](https://architecthawkins.com), an Arizona-based architecture firm. Built with Angular 9 and hosted on GitHub Pages at **[architecthawkins.com](https://architecthawkins.com)**.
 
+| | |
+|---|---|
+| **Repo** | [github.com/architecthawkins/architect-hawkins-llc](https://github.com/architecthawkins/architect-hawkins-llc) |
+| **Live site** | [architecthawkins.com](https://architecthawkins.com) |
+| **GitHub Pages** | [architecthawkins.github.io/architect-hawkins-llc](https://architecthawkins.github.io/architect-hawkins-llc) |
+| **Deployed branch** | `gh-pages` |
+
 ## Development
 
 ```bash
