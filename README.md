@@ -1,57 +1,55 @@
-# Architecture Hawkins LLC
+# Architect Hawkins LLC
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+Portfolio and marketing website for [Architect Hawkins LLC](https://architecthawkins.com), an Arizona-based architecture firm. Built with Angular 9 and hosted on GitHub Pages at **[architecthawkins.com](https://architecthawkins.com)**.
 
-## Development server
+## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```bash
+npm start          # dev server at http://localhost:4200
+npm run ng-port    # dev server at http://localhost:8100
+```
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The app reloads automatically on file changes.
 
 ## Build
-git
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+```bash
+npm run build      # development build -> dist/architect-hawkins-llc
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+For a production build, use the `--prod` flag:
 
-## Running end-to-end tests
+```bash
+ng build --prod
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Deploying to GitHub Pages
 
-## Further help
+A single command handles the production build and deploys to the `gh-pages` branch:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```bash
+npm run git-dply
+```
 
+The live site is served from the custom domain `architecthawkins.com`, configured via the `CNAME` file in the repo root. This file is preserved on every deploy.
 
-## GitHUB Pages Dply
-Step 1: Run `npm install -g angular-cli-ghpages` First install the angular-cli-ghpages globally:
+## Testing
 
-Step 2: Run `ng build --prod --base-href "<repo-name>"` Now use the Angular CLI with the --base-href flag to build your project and set the correct base href location:
-    
-    Example `ng build --prod --base-href "https://architecthawkins.github.io/architect-hawkins-llc/"` 
+```bash
+ng test   # unit tests via Karma
+ng e2e    # end-to-end tests via Protractor
+```
 
+## Code Generation
 
-Step 3: Run `ngh --dir dist/architect-hawkins-llc` to dply the generated dist/architect-hawkins-llc folder
+```bash
+ng generate component component-name
+ng generate directive|pipe|service|class|guard|interface|enum|module
+```
 
+## Linting
 
-Step 4: Validate that `gh-pages` branch was created:
-    
-    Example `https://github.com/architecthawkins/architect-hawkins-llc/branches` 
-
-Step 5: Make repository public (otherwise GitHubPages is not free)
-
-Step 6: Go to github.com/<repoName> -> Settings -> GitHub Pages
-    
-    Example: Your site is ready to be published at https://architecthawkins.github.io/architect-hawkins-llc/
-
-Step 7: In order for your site to be published, a Jekyll theme must be chosen, even if you don’t use Jekyll at all.
-
-See GitHub Resources
-
-https://alligator.io/angular/deploying-angular-app-github-pages/
-https://www.telerik.com/blogs/quick-angular-2-hosting-angular-cli-github-pages
-https://www.youtube.com/watch?v=ACFBy8PI7J0
+```bash
+npm run lint       # run tslint
+npm run lint-fix   # auto-fix lint issues
+```
