@@ -9,6 +9,14 @@ Portfolio and marketing website for [Architect Hawkins LLC](https://architecthaw
 | **GitHub Pages** | [architecthawkins.github.io/architect-hawkins-llc](https://architecthawkins.github.io/architect-hawkins-llc) |
 | **Deployed branch** | `gh-pages` |
 
+## Node.js Compatibility
+
+This project requires **Node 12 or 14**. It was built with Angular 9 and will fail to build on Node 17+ due to an OpenSSL incompatibility between Node's built-in crypto and the webpack version Angular 9 uses (`ERR_OSSL_EVP_UNSUPPORTED`).
+
+The `git-dply` script works around this with `NODE_OPTIONS=--openssl-legacy-provider`, but if Node is upgraded further or the flag stops working, the real fix is upgrading Angular.
+
+> If you see `error:0308010C:digital envelope routines::unsupported` - it's a Node version problem.
+
 ## Development
 
 ```bash
