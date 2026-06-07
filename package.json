@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lint-fix": "./node_modules/.bin/tslint 'src/**/*.ts?(x)' --fix",
-    "git-dply": "ng build --prod --base-href \"/\" && ngh --dir dist/architect-hawkins-llc"
+    "git-dply": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod --base-href \"/\" && ngh --dir dist/architect-hawkins-llc"
   },
   "private": true,
   "dependencies": {

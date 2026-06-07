@@ -42,6 +42,8 @@ The live site is served from the custom domain `architecthawkins.com`, configure
 
 The build uses `--base-href "/"` so all assets resolve relative to the custom domain. Do not change this back to the github.io URL or CORS errors will occur.
 
+The script also sets `NODE_OPTIONS=--openssl-legacy-provider` to work around an OpenSSL incompatibility between Node 17+ and the webpack version used by Angular 9. This flag is required on Node 17 and above.
+
 ## Testing
 
 ```bash
