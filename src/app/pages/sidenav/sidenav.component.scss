@@ -75,6 +75,21 @@ mat-sidenav-content {
   }
 }
 
+/** Widen portfolio sub-menu dropdown panels so long project names don't truncate **/
+:host ::ng-deep .mat-menu-panel {
+  min-width: 280px !important;
+  max-width: 360px !important;
+}
+
+:host ::ng-deep .mat-menu-item {
+  white-space: normal;
+  height: auto;
+  min-height: 48px;
+  line-height: 1.4;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 .color-swatch {
   position: relative;
   width: 175px;
