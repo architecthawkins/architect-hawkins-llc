@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://architecthawkins.com/home</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/west-mec-southwest-campus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/west-mec-northeast-campus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/west-mec-central-campus</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/phoenix-day-school-for-the-deaf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/laveen-elementary-for-the-deaf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/tohono-ooham-museum</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/buckeye-elementary-maintenance</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://architecthawkins.com/portfolio/madison-elementary-school</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
