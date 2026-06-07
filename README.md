@@ -13,9 +13,12 @@ Portfolio and marketing website for [Architect Hawkins LLC](https://architecthaw
 
 This project requires **Node 12 or 14**. It was built with Angular 9 and will fail to build on Node 17+ due to an OpenSSL incompatibility between Node's built-in crypto and the webpack version Angular 9 uses (`ERR_OSSL_EVP_UNSUPPORTED`).
 
-The `git-dply` script works around this with `NODE_OPTIONS=--openssl-legacy-provider`, but if Node is upgraded further or the flag stops working, the real fix is upgrading Angular.
+The `git-dply` script works around this with `NODE_OPTIONS=--openssl-legacy-provider`. A second quirk on Node 23 causes jest-worker to crash during build cleanup (`kill EPERM`) — the build still completes successfully, so the deploy step uses a single `&` instead of `&&` to ensure `ngh` always runs after the build regardless of the cleanup crash exit code.
 
-> If you see `error:0308010C:digital envelope routines::unsupported` - it's a Node version problem.
+If Node is upgraded further and these workarounds stop working, the real fix is upgrading Angular.
+
+> `error:0308010C:digital envelope routines::unsupported` - OpenSSL/Node version problem
+> `Error: kill EPERM` - jest-worker cleanup crash on Node 23, build still succeeded
 
 ## Development
 
