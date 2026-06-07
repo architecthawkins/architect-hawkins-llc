@@ -40,6 +40,8 @@ npm run git-dply
 
 The live site is served from the custom domain `architecthawkins.com`, configured via the `CNAME` file in the repo root. This file is preserved on every deploy.
 
+The build uses `--base-href "/"` so all assets resolve relative to the custom domain. Do not change this back to the github.io URL or CORS errors will occur.
+
 ## Testing
 
 ```bash
